@@ -10,8 +10,9 @@ a {
    left: 50%;
    width: 500px;
    height: 500px;
-   margin-top: -271px; /* Half the height */
-   margin-left: -250px; /* Half the width */
+   margin-top: -271px;
+   margin-left: -250px;
+   transition: background-image 0.3s ease-in-out;
    background:url(logo.png) center center no-repeat;
 }
 
@@ -20,6 +21,7 @@ a:hover {
 }
 
 a:active {
+   transition: background-image 0.1s ease-in-out;
    background:url(logo-active.png) center center no-repeat;
 }
 
