@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Chive</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href='http://fonts.googleapis.com/css?family=Vollkorn' rel='stylesheet' type='text/css'>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script type="text/javascript" src="//use.typekit.net/qyi8hne.js"></script>
+    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+    <script>
+    $(document).ready(function() {
+      $(".fade").addClass("load");
+
+      /*
+      $.fn.smartBackgroundImage = function(url){
+        var t = this;
+        //create an img so the browser will download the image:
+        $('<img />')
+          .attr('src', url)
+          .load(function(){ //attach onload to set background-image
+             t.each(function(){ 
+                $(this).css('backgroundImage', 'url('+url+')' );
+                $(this).fadeIn('slow');
+             });
+          });
+         return this;
+       }
+
+      $('#bg').smartBackgroundImage('bg.jpg');
+      */
+    //$('#back').animate({opacity: 0}, 0).delay(1700).css({'background-image': 'url(bg.jpg)'}).animate({opacity: 1}, 1000);
+    $('#back').animate({opacity: 0}, 0).delay(0).css({'background-image': 'url(bg.jpg)'}).animate({opacity: 1}, 0);
+
+    });
+</script>
+  </head>
+  <body>
+    <div id="back"></div>
+    <div id="bg">
+  	<div id="main">
+   		<img src="logo.png" class="fade" alt="Logo">
+   		<p class="fade">Hey, I'm Kim from Zurich, Switzerland.
+      I code Python and Django for <a href="https://divio.ch">Divio</a>. You
+   		can view some of my work <a href="https://github.com/Chive">here</a> and <a href="https://smuzey.ch">here</a>.
+   		Fancy a coffee? <a href="mailto:kim@smuzey.ch">Hit me up.</a>
+   		</p>
+    </div>
+    </div>
+  </body>
+</html>
