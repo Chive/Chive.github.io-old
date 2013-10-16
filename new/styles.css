@@ -37,7 +37,7 @@ img {
 p {
    display:block;
    color:white;
-   font-family: "chaparral-pro", 'Vollkorn', serif;
+   font-family: "chaparral-pro", serif;
    font-size:2.1em;
    width:30%;
    text-align:justify;
@@ -57,36 +57,14 @@ p {
    opacity: 1;
 }
 
-span.avoidwrap { display:inline-block; }
 
 a {
-   display:inline-block;
-   text-decoration: none;
-   color:blue;
-   transition: background-color 0.2s fade;
-   transition: color 0.2s fade;
-   margin-bottom:-5px;
-   /* border-bottom: 10px solid white; */
-   border-bottom: 1px dotted #34495e;
-   color: #95a5a6;
-  -webkit-transition: color .3s;
-  -moz-transition: color .3s;
-  -o-transition: color .3s;
-  transition: color .3s;
-}
-
-a:hover {
+  display:inline-block;
+  text-decoration: none;
+  border-bottom: 1px dotted white;
   color:white;
-  text-decoration:none;
-  border-bottom:1px solid;
-  -webkit-transition:color .3s;
-  -moz-transition:color .3s;
-  -o-transition:color .3s;
-  transition:color .3s
+  line-height:1em;
 }
 
-a:active {
-}
 
-#preload-01 { background: url(logo-hover.png) no-repeat -9999px -9999px; }
-#preload-02 { background: url(logo-active.png) no-repeat -9999px -9999px; }
+a:hover { border-bottom: 1px solid white; }
