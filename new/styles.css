@@ -22,7 +22,8 @@
 
   #main {
     width:250px;
-    margin:20% auto 100px;
+    margin:20% auto;
+    padding-bottom:50px;
   }
 
   img {

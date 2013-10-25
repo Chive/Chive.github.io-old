@@ -11,6 +11,8 @@
     <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
     <script>
     $(document).ready(function() {
+      $('#logo').removeClass('fade');
+      $('#text').addClass('fade');
       $('html').addClass('fade').ready(function() {
         $('html').addClass('load')
         window.setTimeout(function() {
@@ -22,10 +24,9 @@
 </script>
   </head>
   <body>
-    <div id="bg" class="fade"></div>
   	<div id="main">
-   		<img src="logo.png" class="fade" alt="Logo">
-   		<p class="fade">Hey, I'm Kim from Zu&shy;rich, Switz&shy;er&shy;land.
+   		<img id="logo" src="logo.png" alt="Logo">
+   		<p id="text">Hey, I'm Kim from Zu&shy;rich, Switz&shy;er&shy;land.
       I code Py&shy;thon and Djan&shy;go for <a href="https://divio.ch">Divio</a>. You
    		can view some of my work <a href="https://github.com/Chive">here</a> and <a href="https://smuzey.ch">here</a>.
    		Fancy a cof&shy;fee? <a href="mailto:kim@smuzey.ch">Hit me up</a>.
