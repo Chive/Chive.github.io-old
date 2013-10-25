@@ -3,7 +3,7 @@
   html { background-color: black; }
   #main {
     width:250px;
-    margin:20% auto;
+    margin:20% auto 0;
   }
 
   #bg {
