@@ -11,30 +11,18 @@
     <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
     <script>
     $(document).ready(function() {
-      $(".fade").addClass("load");
+      $('#bg').load('new/bg.jpg', function() {
+        $('#bg').css( { 'background-image': 'url("bg.jpg")' }).addClass('load')
+        window.setTimeout(function() {
+          $('.fade').addClass('load')
+        }, 500)
 
-      
-      $.fn.smartBackgroundImage = function(url){
-        var t = this;
-        //create an img so the browser will download the image:
-        $('<img />')
-          .attr('src', url)
-          .load(function(){
-             t.each(function(){ 
-                $(this).css('backgroundImage', 'url('+url+')' );
-                $(this).fadeIn('slow'); // FIXME: Not working yet
-             });
-          });
-         return this;
-       }
-
-      $('#bg').smartBackgroundImage('bg.jpg');
-      
+      });
     });
 </script>
   </head>
   <body>
-    <div id="bg"></div>
+    <div id="bg" class="fade"></div>
   	<div id="main">
    		<img src="logo.png" class="fade" alt="Logo">
    		<p class="fade">Hey, I'm Kim from Zu&shy;rich, Switz&shy;er&shy;land.
