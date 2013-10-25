@@ -11,8 +11,8 @@
     <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
     <script>
     $(document).ready(function() {
-      $('#bg').load('bg.jpg', function() {
-        $('#bg').css( { 'background-image': 'url("bg.jpg")' }).addClass('load')
+      $('#bg').addClass('fade').ready(function() {
+        $('#bg').addClass('load')
         window.setTimeout(function() {
           $('.fade').addClass('load')
         }, 500)
