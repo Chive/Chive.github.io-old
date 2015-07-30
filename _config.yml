@@ -1,0 +1,40 @@
+name: Chive
+# description: Blogging about stuffs
+# meta_description: "Your New Jekyll Site, Blogging about stuffs"
+
+markdown: redcarpet
+highlighter: pygments
+
+paginate: 20
+baseurl: /
+domain_name: 'http://chive.ch'
+google_analytics: 'UA-XXXXXXXX-X'
+disqus: false
+disqus_shortname: null
+
+# Details for the RSS feed generator
+url:            'http://chive.ch'
+author:         'Kim Thoenen'
+authorTwitter:  null
+
+permalink:       /:year/:title/
+
+defaults:
+    -
+        scope:
+            path: "" # empty string for all files
+            type: pages
+        values:
+            layout: default
+    -
+        scope:
+            path: "" # empty string for all files
+            type: posts
+        values:
+            layout: post
+    -
+        scope:
+            path: ""
+            type: drafts
+        values:
+            layout: post
